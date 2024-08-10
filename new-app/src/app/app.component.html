@@ -1,0 +1,22 @@
+<div>html render</div>
+<!-- string interpolation -->
+<div>{{ StringInterpolation }}</div>
+<!-- Property Binding -->
+<div [innerHTML]="PropertyBinding"></div>
+<input type="text" [disabled]="isDisabled" />
+<br />
+<!-- Event Binding -->
+<button (click)="clickButton(1, 2)">Click button</button>
+<br />
+<!-- two Way Binding -->
+<input type="text" [(ngModel)]="twoWayBinding" />
+<div [innerHTML]="twoWayBinding"></div>
+<br />
+<!-- IF Directive -->
+<br />
+<div *ngIf="ngFore.length !== 0">no List</div>
+<!-- For Directive -->
+<br />
+<li *ngFor="let list of ngFore">
+  {{ list }}
+</li>
